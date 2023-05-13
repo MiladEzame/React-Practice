@@ -118,3 +118,18 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+.not-found button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  margin: 16px 0px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.not-found a {
+  text-decoration: none;
+  color: #fff;
+}

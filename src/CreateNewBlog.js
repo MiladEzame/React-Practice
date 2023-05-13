@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CreateNewBlog = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const [author, setAuthor] = useState('mario');
   const [isPending, setisPending] = useState(false);
+  const navigate = useNavigate();
 
 
   const handleSubmit = (e) => {
@@ -19,6 +21,7 @@ const CreateNewBlog = () => {
       body: JSON.stringify(blog)
     }).then(() => {
       setisPending(false);
+      navigate('/');
     })
   }
 
